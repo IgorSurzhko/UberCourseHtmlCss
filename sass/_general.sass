@@ -41,15 +41,16 @@ nav
 	padding: 13px 70px
 	margin: 0
 	list-style-type: none
-
-	.menu_link
+	&_link
 		font-weight: 300
 		font-size: 15px
 		color: #FFFFFF
-
-	.menu_item
+		text-decoration: none
+	&_item
 		border-right: 2px dotted black
 		padding-right: 35px
+		&:last-child
+			border-right: none
 
 .subheader
 	position: absolute
@@ -155,20 +156,9 @@ nav
 .start_work
 	min-height: 849px
 	padding: 18px 0 64px 0
-
-
-
 	.row
 		margin-top: 16px
-
 	.item_text
-		span
-			font-style: normal
-			font-weight: normal
-			font-size: 17px
-			align-items: center
-			color: #1EACC7
-
 		width: 370px
 		margin-left: 45px
 		font-style: normal
@@ -178,10 +168,18 @@ nav
 		text-align: left
 		min-height: 150px
 		color: #202020
+		span
+			font-style: normal
+			font-weight: normal
+			font-size: 17px
+			align-items: center
+			color: #1EACC7
+
+		
 
 	.card
 		display: flex
-
+				
 	.card_btm
 		display: flex
 		margin-top: 26px
